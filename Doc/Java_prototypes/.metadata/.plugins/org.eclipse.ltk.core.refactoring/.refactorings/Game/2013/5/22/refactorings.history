@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Game/Web_Page&apos; to &apos;Web_Pages&apos;" description="Rename resource &apos;Web_Page&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Web_Page" name="Web_Pages" stamp="1370042709109" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Game/Build/run.bat&apos; to &apos;run.cmd&apos;" description="Rename resource &apos;run.bat&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Build/run.bat" name="run.cmd" stamp="1370042834821" updateReferences="true"/>
+</session>

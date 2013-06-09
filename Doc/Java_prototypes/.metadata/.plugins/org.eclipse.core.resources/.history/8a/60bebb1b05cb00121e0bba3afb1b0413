@@ -1,0 +1,7 @@
+<script src="Scripts/Main.js" type="text/javascript"></script>
+
+<!-- Fragment shader program -->
+<script id="shader-fs" src="Scripts/FragmentShader.js" type="x-shader/x-fragment"></script>
+    
+<!-- Vertex shader program -->
+<script id="shader-vs" src="Scripts/VertexShader.js" type="x-shader/x-vertex"></script>

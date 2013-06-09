@@ -1,0 +1,21 @@
+update/rendering loop (multithread bassed)
+implement environment box
+implement CompositeGameObject
+3d models+textures+renderlist handle classes
+ressource loader
+XML config (if empty : use screen max resolution, otherwise, use already entered value.) for refresh rate, use the user's settings
+external libs : sound --> fmod
+				text --> ftgl(or glut)
+				XML --> tinyxml
+				texture loading --> free_image(or probably better to implement with openGL)
+				blender wrapper --> assimp
+implement Sound class
+implement stardard shaders
+create GameObjects (3D models, animations)
+main menu : design according to theme
+			options(XML configuration)
+				--> video
+				--> gameplay
+				--> Sound
+extras :				
+implement coop mode using a one of the player as the host

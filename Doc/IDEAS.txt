@@ -1,0 +1,13 @@
+make a maze that descends into hell
+each level is closer to hell
+maze is generated randomly
+first level : skybox, open sky
+scary theme
+random updrades (like binding of isaac)
+enemies on each lvl
+player health, if he dies, consequences (ex : go back a lvl higher)
+when player gets overwhelmed, 5 charges per lvl to regenerate entire lvl randomly
+as the player walks through the maze, he reveals where he has passed on his map
+mini bosses at random place in lvl, big boss at the end
+theme for each lvl (darker as you get lower to hell)
+random teleports from one place to another in the map

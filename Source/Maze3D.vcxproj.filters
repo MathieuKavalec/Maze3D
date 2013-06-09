@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Lighting">
+      <UniqueIdentifier>{ba6538d2-3989-4149-ba07-6e08cc8d0b1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{fd5cace4-2bcc-4b59-864a-921909833250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{5b9318b4-02c1-4c11-ac2a-b4630a4f7199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{24eee26a-a246-490e-8a2e-2180f01698b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{f37fdb78-779f-4028-aa61-686d4be3145f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{3b208182-27be-444d-9a68-4112ba0e2302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Keyboard">
+      <UniqueIdentifier>{e0b4a69c-c430-48a6-9e81-a4598f012c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects">
+      <UniqueIdentifier>{e5026e42-dbc8-4062-bd42-6be83691569c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Environment">
+      <UniqueIdentifier>{9efb618b-a782-409c-a333-f1c392a72af8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Player">
+      <UniqueIdentifier>{39404921-8aad-4022-be17-dca34f2f5894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Objects">
+      <UniqueIdentifier>{2dfcf6b1-fb6f-48bb-aa8f-5bd446f8a3ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources">
+      <UniqueIdentifier>{cc1ff032-ce90-46d2-bd70-504da27a6cf8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Shaders\Shaders.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Lighting\Lighting.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="Lighting\Light.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="View\Camera.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="View\Projection.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="View\Window.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Vector3.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Player.cpp">
+      <Filter>GameObjects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\CompositeGameObject.cpp">
+      <Filter>GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\GameObject.cpp">
+      <Filter>GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Utility.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\GameWorld.cpp">
+      <Filter>GameObjects\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Keyboard.cpp">
+      <Filter>Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InGameKeyboard.cpp">
+      <Filter>Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Ressources\Model3D.cpp">
+      <Filter>Ressources</Filter>
+    </ClCompile>
+    <ClCompile Include="Lighting\Material.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\EnvironmentBox.cpp">
+      <Filter>GameObjects\Environment</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shaders\Shaders.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Lighting\Lighting.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="Lighting\Light.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Utility.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="View\Camera.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="View\Projection.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="View\Window.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Vector3.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\GameObject.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Player.h">
+      <Filter>GameObjects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\CompositeGameObject.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\GameWorld.h">
+      <Filter>GameObjects\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Keyboard.h">
+      <Filter>Input\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InGameKeyboard.h">
+      <Filter>Input\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Ressources\Model3D.h">
+      <Filter>Ressources</Filter>
+    </ClInclude>
+    <ClInclude Include="Lighting\Material.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\EnvironmentBox.h">
+      <Filter>GameObjects\Environment</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Exe\Shaders\generic-fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Exe\Shaders\generic-vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
