@@ -96,6 +96,27 @@
     <ClCompile Include="GameObjects\EnvironmentBox.cpp">
       <Filter>GameObjects\Environment</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Renderer.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameLogic.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Ressources\Texture.cpp">
+      <Filter>Ressources</Filter>
+    </ClCompile>
+    <ClCompile Include="Ressources\Font.cpp">
+      <Filter>Ressources</Filter>
+    </ClCompile>
+    <ClCompile Include="Ressources\RessourceLoader.cpp">
+      <Filter>Ressources</Filter>
+    </ClCompile>
+    <ClCompile Include="Ressources\Sound.cpp">
+      <Filter>Ressources</Filter>
+    </ClCompile>
+    <ClCompile Include="Ressources\Ressouce.cpp">
+      <Filter>Ressources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shaders\Shaders.h">
@@ -151,6 +172,27 @@
     </ClInclude>
     <ClInclude Include="GameObjects\EnvironmentBox.h">
       <Filter>GameObjects\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Renderer.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameLogic.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Ressources\Texture.h">
+      <Filter>Ressources</Filter>
+    </ClInclude>
+    <ClInclude Include="Ressources\Font.h">
+      <Filter>Ressources</Filter>
+    </ClInclude>
+    <ClInclude Include="Ressources\RessourceLoader.h">
+      <Filter>Ressources</Filter>
+    </ClInclude>
+    <ClInclude Include="Ressources\Sound.h">
+      <Filter>Ressources</Filter>
+    </ClInclude>
+    <ClInclude Include="Ressources\Ressouce.h">
+      <Filter>Ressources</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

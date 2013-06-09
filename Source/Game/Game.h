@@ -3,6 +3,7 @@
 #include "glew.h"
 #include <vector>
 #include <windows.h>
+#include "GameLogic.h"
 #include "Lighting.h"
 #include "Camera.h"
 #include "Window.h"
@@ -12,6 +13,7 @@
 #include "Keyboard.h"
 #include "InGameKeyboard.h"
 #include "GameObject.h"
+#include "Renderer.h"
 
 class Game
 {
@@ -26,6 +28,8 @@ public:
 	static GameWorld& gameWorld();
 	static Player& player();
 	static Keyboard& keyboard();
+	static Renderer& renderer();
+	static GameLogic& gameLogic();
 
 	static void render();
 	static void update(GLfloat time);
@@ -51,6 +55,8 @@ private:
 	GameWorld gameWorld_;
 	Player player_;
 	Keyboard* keyboard_;
+	Renderer renderer_;
+	GameLogic gameLogic_;
 
 	static GLuint DEFAULT_ID;
 	static GLuint PLAYER_ID;

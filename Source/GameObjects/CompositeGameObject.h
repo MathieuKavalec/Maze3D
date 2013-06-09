@@ -23,13 +23,13 @@ public:
 	void findAll(const GameObject& object, std::vector<GameObject*>& objectsFound);
 	void getAll(std::vector<GameObject*>& objects);
 
-	void add(const GameObject* newObject);
+	void add(GameObject* newObject);
 	void add(const std::vector<GameObject*>& objects);
 
 	GameObject* removeNext(GLuint ID);
 	GameObject* removeNext(const std::string& Type);
 	GameObject* removeNext(const GameObject& object);
-	void remove(GameObject* object);
+	bool remove(GameObject* object);
 	std::vector<GameObject*> removeAll(GLuint ID);
 	std::vector<GameObject*> removeAll(const std::string& Type);
 	std::vector<GameObject*> removeAll(const GameObject& object);

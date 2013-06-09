@@ -21,6 +21,8 @@ public:
 
 	bool operator==(const GameObject& object);
 	bool operator!=(const GameObject& object);
+
+	unsigned int getNumberOfChildren();
 	
 	bool visible;
 

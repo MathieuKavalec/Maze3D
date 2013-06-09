@@ -43,3 +43,8 @@ void GameObject::setShader(GLuint Shader)
 {
 	shader = Shader;
 }
+
+unsigned int GameObject::getNumberOfChildren()
+{
+	return 0;
+}

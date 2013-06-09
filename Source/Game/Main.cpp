@@ -6,15 +6,8 @@
 #include "Utility.h"
 #include "Game.h"
 
-#define REFRESH_RATE 5
-
-/************Function Signatures**************/
 void initialize();
 void initializeLighting();
-void draw();
-void drawScene();
-void drawTimer(int value);
-/*********************************************/
 
 int main( int argc, char *argv[] )
 {
@@ -29,7 +22,7 @@ int main( int argc, char *argv[] )
 
 	//std::string width = itoa(GetSystemMetrics(SM_CXFULLSCREEN));
 
-	glutGameModeString("1920x1080:32@60");
+	glutGameModeString("1920x1080:32@60"); // @TODO (above)
 	if (glutGameModeGet(GLUT_GAME_MODE_POSSIBLE))
 		glutEnterGameMode();
 	else {
@@ -40,7 +33,7 @@ int main( int argc, char *argv[] )
 	}
 
 	glutReshapeFunc(Game::resize);
-	glutDisplayFunc(draw);
+	glutDisplayFunc(Game::render);
 	glutKeyboardFunc(Game::keyDown);
 	glutKeyboardUpFunc(Game::keyUp);
 	glutSetCursor(GLUT_CURSOR_NONE);
@@ -48,8 +41,10 @@ int main( int argc, char *argv[] )
 	glutEntryFunc(Game::windowFocus);
 
 	initialize();
-	glutTimerFunc(REFRESH_RATE, drawTimer, 0);
+	Game::renderer().start();
+	Game::gameLogic().start();
 	glutMainLoop();
+
 	Game::quit(EXIT_SUCCESS);
 }
 
@@ -105,49 +100,6 @@ static void initializeLighting()
 		position, spotDirection, exponent, cutoff,
 		constantAttenuation, linearAttenuation, quadraticAttenuation);
 	Game::lighting().addLight(light0);
-}
-
-static void drawTimer(int value)
-{
-	glutTimerFunc(REFRESH_RATE, drawTimer, 0);
-	glutPostRedisplay();
-	Game::update(value);
-}
-
-static void draw()
-{
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	Game::projection().apply();
-
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-	Game::camera().apply();
-
-	Game::lighting().refresh();
-
-	drawScene();
-	glutSwapBuffers();
-}
-
-static void drawScene()
-{
-	/*GLfloat ambiant[4] = {0.2, 0.2, 0.2, 1.0};
-	GLfloat diffuse[4] = {1.0, 1.0, 1.0, 1.0};
-	GLfloat specular[4] = {0.6, 0.6, 0.6, 1.0};
-	GLfloat shininess = 128;
-	Material material(ambiant, GL_FRONT_AND_BACK, diffuse, GL_FRONT_AND_BACK, 
-		specular, GL_FRONT_AND_BACK, shininess, GL_FRONT_AND_BACK);
-	material.apply();*/
-
-	glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
-	glEnable(GL_COLOR_MATERIAL);
-	glColor3f(0.1, 0.6, 0.3);
-	glTranslated(0.0, 0.0, 15.0);
-	glutSolidTeapot(5.0);
-	glDisable(GL_COLOR_MATERIAL);
 }
 
 /*

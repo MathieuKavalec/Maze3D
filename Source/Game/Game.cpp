@@ -41,6 +41,27 @@ void Game::render()
 		game->gameObjects[i]->render();
 	game->player_.render();
 	game->gameWorld_.render();
+
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	Game::projection().apply();
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	Game::camera().apply();
+
+	Game::lighting().refresh();
+
+	glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+	glEnable(GL_COLOR_MATERIAL);
+	glColor3f(0.1, 0.6, 0.3);
+	glTranslated(0.0, 0.0, 15.0);
+	glutSolidTeapot(5.0);
+	glDisable(GL_COLOR_MATERIAL);
+
+	glutSwapBuffers();
 }
 
 void Game::update(GLfloat time)
@@ -120,4 +141,14 @@ Player& Game::player()
 Keyboard& Game::keyboard()
 {
 	return *getInstance()->keyboard_;
+}
+
+Renderer& Game::renderer()
+{
+	return getInstance()->renderer_;
+}
+
+GameLogic& Game::gameLogic()
+{
+	return getInstance()->gameLogic_;
 }

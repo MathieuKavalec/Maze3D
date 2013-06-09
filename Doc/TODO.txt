@@ -1,4 +1,3 @@
-update/rendering loop (multithread bassed)
 implement environment box
 implement CompositeGameObject
 3d models+textures+renderlist handle classes
