@@ -42,7 +42,7 @@ local.properties
 *.sln.docstates
 
 # Build results
-
+Maze3D.exe
 [Dd]ebug/
 [Rr]elease/
 x64/
